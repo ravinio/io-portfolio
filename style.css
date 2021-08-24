@@ -1,0 +1,314 @@
+body {
+  /*A THING*/
+  	  background: linear-gradient(-45deg, #5C4DD1, #334A4C, #D81159);
+    	background-size: 400% 400%;
+	    animation: gradient 10s ease infinite;
+      /* By:
+         Manuel Pinto
+         https://manuelpinto.in*/
+  /*A THING*/
+
+  font-family: Poiret One Regular;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+::selection {
+  color: #c2f8cb;
+  background-color: #240046;
+}
+
+/*--------Nav Things--------*/
+.navbar-brand {
+  padding: 3px;
+  margin: 7px;
+}
+
+li a {
+  -webkit-transition: background 4s; /* For Safari 3.0 to 6.0 */
+  transition: background 4s;
+}
+
+li a:hover { 
+border: 2px outset rgba(45,51,57,0.8);
+background: #363d45;
+}
+
+
+/*------My hero-------*/
+ .hero {
+  color: white;
+  background-image: url("images/lubo-minar.jpg"); 
+  background-color: black;
+  box-shadow: 0 5px 25px black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Begin Parallax effect! Thanks Taylor!*/
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100% !important;
+} 
+
+.me-again {
+  border-radius: 50%;
+  box-shadow: 0 5px 25px black;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  border: 3px solid #F6F4F5;
+  max-width: 200px;
+  margin-top: 15%;
+}
+
+.hero, h1 {
+  font-size: 5vw;
+}
+.hero, h2 {
+  font-size: 3vw;
+}
+
+.hero h1, h2 {
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: anim 8s linear infinite;
+}
+
+@keyframes anim {
+   from {background-position: 0}
+   to {background-position: 400%}
+}
+
+/*F*CK THIS IM DOING IT MY WAY CAUSE BOOTSTRAP IS ANNOYING (keeping old code in case eveything falls apart....)*/
+ /* .hero-image {
+  background-image: url("https://picsum.photos/1900/1080?random"); 
+  filter: blur(8px);
+   -webkit-filter: blur(8px);
+  background-color: black;
+  box-shadow: 0 5px 25px black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+} 
+
+.col, .intro {
+  filter: blur(none);
+  vertical-align: middle;
+  display: inline-block;
+  height: 5%;
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  margin: auto;
+}
+
+.me-again {
+  border-radius: 50%;
+  max-height: 200px;
+  max-width: 200px;
+  box-shadow: 0 5px 25px black;
+}
+
+.hero-image, h1 {
+  text-shadow: 1px 0px 1px black, 0px 1px 1px black, 
+    2px 1px 1px black, 1px 2px 1px black,
+    3px 2px 1px black, 2px 3px 1px black;
+  font-size: 60px;
+  font-weight: bold; 
+  font-family: Poiret One Regular;
+	color: #F6F4F5;
+}
+
+.hero-image, h2 {
+  text-shadow: 1px 0px 1px black, 0px 1px 1px black, 
+    2px 1px 1px black, 1px 2px 1px black,
+    3px 2px 1px black, 2px 3px 1px black;
+  font-size: 30px;
+  font-weight: bold; 
+  color: #F6F4F5;
+} */
+
+/*----Meet me stuff-----*/
+.container, .meet {
+  color: #F6F4F5;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+
+.container .meet, h3 {
+  font-size: 5vw;
+  text-shadow: 2px 2px 5px black;
+}
+
+/*----skilz----*/
+.skills {
+  background-color: #F6F4F5;
+  box-shadow: 0 -5px 25px black;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.skills h3 {
+  color: #f51353;
+}
+
+.skills .col {
+  max-width: 40px;
+}
+
+.skills .img-fluid {
+  max-height: 7em;
+}
+
+/* # Hover.css
+A Pen created on CodePen.io. Original URL: [https://codepen.io/IanLunn/pen/hysxc](https://codepen.io/IanLunn/pen/hysxc). */
+/*Hover*/
+@keyframes hover {
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes hover-shadow {
+  0% {
+    transform: translateY(6px);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(6px);
+    opacity: 0.4;
+  }
+}
+.hover-shadow {
+  display: inline-block;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hover-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.hover-shadow:hover {
+  transform: translateY(-6px);
+  animation-name: hover;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.hover-shadow:hover:before {
+  opacity: 0.4;
+  transform: translateY(6px);
+  animation-name: hover-shadow;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+figcaption {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*---------------Carousel---------------*/
+.carousel-caption {
+  text-shadow: 2px 2px 5px black;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+}
+
+.carousel-caption h5 {
+  font-size: 2vw;
+}
+
+.carousel-caption p {
+  font-size: 1vw;
+}
+
+/*-------Contact things------*/
+.contact {
+  background-color: #F6F4F5;
+  box-shadow: 0 -5px 25px black;
+  width: 100% !important;
+  height: auto !important;
+  padding-bottom: 60px;
+}
+
+.contact h3 {
+  color: #f51353;
+}
+
+a i {
+  color: #334A4C;
+  font-size: 10vw;
+}
+
+/* Grow */
+.grow {
+  display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.grow:hover {
+  transform: scale(1.5);
+  color: #ffbd00;
+}
+
+/*------footies-------*/
+footer {
+  font-size: 2vw;
+}
+
+/*---MOUSE POINTER THINGS-----*/
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
